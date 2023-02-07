@@ -38,7 +38,7 @@
       <%= link_to "&laquo; Back to Index", "/" %>
     </nav>
 
-<%= Kramdown::Document.new(guide, input: "GFM", syntax_highlighter_opts: { line_numbers: false }).to_html %>
+<%= raw Kramdown::Document.new(guide, input: "GFM", syntax_highlighter_opts: { line_numbers: false }).to_html %>
   </div>
   </body>
 </html>
